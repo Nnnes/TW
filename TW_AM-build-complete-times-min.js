@@ -1,0 +1,1 @@
+Array.from(buildings_table.rows).forEach((r,i)=>{while(r.cells.length > 21)r.removeChild(r.lastChild);i==0?r.appendChild(document.createElement('th').appendChild(document.createTextNode('Next building')).parentNode):r.insertCell().appendChild(document.createTextNode(r.cells.item(20).querySelector('#order_0 .queue_icon img')?.getAttribute('data-title').split(' - ').at(1)||''))});
